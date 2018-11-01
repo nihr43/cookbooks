@@ -10,3 +10,8 @@ package %w{epel-release  vim  git  htop } do
 end
 
 
+cookbook_file '/etc/cron.hourly/chef-client' do
+  source 'etc/cron.hourly/chef-client'
+  mode '0755'
+  action :create
+end

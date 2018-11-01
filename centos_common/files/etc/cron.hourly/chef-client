@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+## pull chef config
+
+chef-client
+
+logger "chef-client ran at `date`"
