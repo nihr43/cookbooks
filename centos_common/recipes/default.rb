@@ -5,6 +5,8 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
 
-package 'epel-release' do
+package %w{epel-release  vim  git  htop } do
   action [ :install ]
 end
+
+
