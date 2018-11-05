@@ -4,10 +4,6 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-execute 'disable selinux' do
-  command 'setenforce 0'
-end
-
 package %w{ mariadb-server httpd } do
   action :install
 end
